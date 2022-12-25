@@ -1,4 +1,4 @@
-package events;
+package tn.ipsas.coremodels.events;
 
 import org.springframework.context.ApplicationEvent;
 import tn.ipsas.coremodels.models.client.Client;

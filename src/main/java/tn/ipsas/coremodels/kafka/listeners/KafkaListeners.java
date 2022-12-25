@@ -1,6 +1,6 @@
-package kafka.listeners;
+package tn.ipsas.coremodels.kafka.listeners;
 
-import events.ClientAddedEvent;
+import tn.ipsas.coremodels.events.ClientAddedEvent;
 import org.springframework.context.ApplicationEventPublisher;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.annotation.KafkaListener;

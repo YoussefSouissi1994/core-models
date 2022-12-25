@@ -1,4 +1,4 @@
-package kafka;
+package tn.ipsas.coremodels.kafka;
 
 import org.apache.kafka.clients.admin.AdminClientConfig;
 import org.apache.kafka.clients.admin.NewTopic;
