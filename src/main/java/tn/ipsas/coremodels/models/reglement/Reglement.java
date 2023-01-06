@@ -3,7 +3,6 @@ package tn.ipsas.coremodels.models.reglement;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import tn.ipsas.coremodels.models.client.Client;
-import tn.ipsas.coremodels.models.facture.Facture;
 
 import java.util.Date;
 import java.util.List;
@@ -14,7 +13,7 @@ public class Reglement {
     private Double amount;
     private Date date;
     @DBRef
-    private List<Facture> factures;
+    private List<ReglementItem> items;
     @DBRef
     private Client client;
 
@@ -42,12 +41,12 @@ public class Reglement {
         this.date = date;
     }
 
-    public List<Facture> getFacture() {
-        return factures;
+    public List<ReglementItem> getItems() {
+        return items;
     }
 
-    public void setFacture(List<Facture> factures) {
-        this.factures = factures;
+    public void setItems(List<ReglementItem> items) {
+        this.items = items;
     }
 
     public Client getClient() {
