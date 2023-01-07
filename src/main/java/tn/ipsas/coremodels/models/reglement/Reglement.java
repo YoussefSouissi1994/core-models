@@ -12,7 +12,6 @@ public class Reglement {
     private String id;
     private Double amount;
     private Date date;
-    @DBRef
     private List<ReglementItem> items;
     @DBRef
     private Client client;

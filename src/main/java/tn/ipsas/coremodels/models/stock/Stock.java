@@ -9,7 +9,7 @@ public class Stock {
     private String id;
     @DBRef
     private Product product;
-    private Long quantity;
+    private int quantity;
 
     public String getId() {
         return id;
@@ -27,11 +27,11 @@ public class Stock {
         this.product = product;
     }
 
-    public Long getQuantity() {
+    public int getQuantity() {
         return quantity;
     }
 
-    public void setQuantity(Long quantity) {
+    public void setQuantity(int quantity) {
         this.quantity = quantity;
     }
 }
