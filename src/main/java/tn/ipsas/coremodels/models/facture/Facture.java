@@ -4,13 +4,15 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.DBRef;
 import tn.ipsas.coremodels.models.client.Client;
 
+import java.time.LocalDate;
 import java.util.List;
-import java.util.function.ToDoubleFunction;
 
 public class Facture {
     @Id
     private String id;
     private String code;
+
+    private LocalDate date;
     @DBRef
     private Client client;
     private List<FactureItem> items;
@@ -46,6 +48,15 @@ public class Facture {
     public void setItems(List<FactureItem> items) {
         this.items = items;
     }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
     public double getTotal() {
         return items
                 .stream()
